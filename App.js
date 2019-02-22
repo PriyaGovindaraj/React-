@@ -65,8 +65,8 @@ class App extends React.Component {
               exact
               path="/"
               layout={MainLayout}
-              component={VehicleTypeIndex}
-            />
+              component={DashboardPage}
+             />
             
              <LayoutRoute
               exact
@@ -183,8 +183,8 @@ class App extends React.Component {
               layout={MainLayout}
               component={AuthPage}
             />
-            <Redirect from="/" to="/vehicle-type-list" />
-          </Switch>
+              <Redirect to="/"/>
+           </Switch>
         </GAListener>
       </BrowserRouter>
     );
